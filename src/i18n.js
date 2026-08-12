@@ -1,6 +1,9 @@
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+// i18next's default export is the same instance whose methods (use/init/...) are
+// individually re-exported by name, so this is a known false positive.
+// eslint-disable-next-line import/no-named-as-default-member
 i18n
   .use(LanguageDetector)
   .init({
@@ -8,19 +11,44 @@ i18n
     resources: {
       en: {
         translations: {
-          Title: 'Title',
+          Dollar: 'Dollar',
+          Euro: 'Euro',
         },
       },
-      pt_br: {
+      pt: {
         translations: {
-          Title: 'Título',
-          Config: 'Configurações',
-          Media: 'Mídia',
-          Orientation: 'Orientação',
+          Dollar: 'Dólar',
+          Euro: 'Euro',
+        },
+      },
+      es: {
+        translations: {
+          Dollar: 'Dólar',
+          Euro: 'Euro',
+        },
+      },
+      it: {
+        translations: {
+          Dollar: 'Dollaro',
+          Euro: 'Euro',
+        },
+      },
+      de: {
+        translations: {
+          Dollar: 'Dollar',
+          Euro: 'Euro',
+        },
+      },
+      nl: {
+        translations: {
+          Dollar: 'Dollar',
+          Euro: 'Euro',
         },
       },
     },
-    fallbackLng: 'en',
+    fallbackLng: {
+      default: ['en'],
+    },
     debug: true,
 
     // have a common namespace used around the full app

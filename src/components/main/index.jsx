@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   FitText,
   useTemplateVal,
@@ -8,6 +9,7 @@ import WeatherCard from '../weathercard';
 import DirectionArrows from '../directionarrows';
 
 function Main() {
+  const { t } = useTranslation();
   const hotelLogo = useTemplateVal('logo');
   const primaryCardColor = useTemplateVal('primary_card_color');
   const primaryCardFontColor = useTemplateVal('primary_card_font_color');
@@ -170,11 +172,11 @@ function Main() {
                   <FitText>{exchangeCardTitle}</FitText>
                 </div>
                 <div className="flex flex-row justify-between gap-4">
-                  <div className="h-10"><FitText>Dollar</FitText></div>
+                  <div className="h-10"><FitText>{t('Dollar')}</FitText></div>
                   <div className="h-10"><FitText>{exchangeRateUSD}</FitText></div>
                 </div>
                 <div className="flex flex-row justify-between gap-4">
-                  <div className="h-10"><FitText>Euro</FitText></div>
+                  <div className="h-10"><FitText>{t('Euro')}</FitText></div>
                   <div className="h-10"><FitText>{exchangeRateEUR}</FitText></div>
                 </div>
               </div>
