@@ -17,13 +17,13 @@ var dsplay_template = {
     longitude: '-35.0086754',
     city: 'São José do Vale do Rio Preto',
     // Logo
-    logo: '../test-assets/senac.png',
+    logo: 'https://ui-avatars.com/api/?name=Hotel&size=256&background=1a3c5e&color=fff&bold=true&format=png',
     // Global background and font color
     background_color: "#282828",
     // Images
-    image_01: "../test-assets/room-01.jpg",
-    image_02: "../test-assets/room-02.jpg",
-    image_03: "../test-assets/room-03.jpg",
+    image_01: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hotel_Room_-_Embassy_Suites_by_Hilton_St._Paul_Downtown_%2831347597404%29.jpg/1280px-Hotel_Room_-_Embassy_Suites_by_Hilton_St._Paul_Downtown_%2831347597404%29.jpg",
+    image_02: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Hotel_room_at_HRH_Tower_%28Las_Vegas%29.jpg",
+    image_03: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hotel-suite-living-room.jpg/1280px-Hotel-suite-living-room.jpg",
     //Cards and text colors
     primary_card_color: "#d8d4c9",
     primary_card_font_color: "#2a2220",
